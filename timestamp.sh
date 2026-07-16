@@ -1,4 +1,4 @@
 #!/bin/bash
 
-Timestamp=$(day)
+Timestamp=$(date)
 echo "Today is : $Timestamp"
