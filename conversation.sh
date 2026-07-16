@@ -5,4 +5,4 @@ PERSON2=Pankhuri
 
 echo "$PERSON1 hi"
 echo " $PERSON2, HELLO"
-echo "$VYSHNAVI $Pankhuri"
+echo "$PERSON1 $PERSON2"
