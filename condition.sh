@@ -10,4 +10,16 @@ else
  exit 12
 fi
 
+dnf list installed mysql
+
+if [ $? -ne 0 ]
+then
+ echo "if mysql is not installed install"
+
+else
+ then "show as mysql is not present"
+ exit 12
+ fi
+
+
    
