@@ -17,7 +17,8 @@ then
  echo "if mysql is not installed install"
 
 else
-  then "show as mysql is not present"
+then 
+echo "show as mysql is not present"
  exit 12
  fi
 
