@@ -2,25 +2,16 @@
 
 USERID=$(id -u)
 
-if [ $USERID -ne 0 ]
-then
- echo "User is running with root access"
-else
- echo "User is not running with root access"
- exit 12
+if [ $USERID -ne 0 ] then
+ echo " you are running with root access "
 fi
 
-dnf  install mysql 
+dnf install mysql
 
-if [ $? -ne 0 ]
-then
- echo "if mysql is not installed install"
+if [ $? -eq 0 ] then
+ echo "Myqsl is getting installed"
 
-else
-echo "show as mysql is not present"
- exit 12
- fi
-
+fi
 
 
    
