@@ -10,7 +10,7 @@ else
  exit 12
 fi
 
-dnf list installed mysql nginx
+dnf  install mysql 
 
 if [ $? -ne 0 ]
 then
