@@ -1,8 +1,8 @@
 #!/bin/bash
 
-USERID= $(id -u)
+USERID=$(id -u)
 
-if [ $USERID - eq 0 ]
+if [ $USERID -eq 0 ]
 then
  echo "User is running with root access"
 else
