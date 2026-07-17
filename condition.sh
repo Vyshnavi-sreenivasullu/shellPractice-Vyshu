@@ -10,7 +10,7 @@ else
  exit 12
 fi
 
-dnf list installed mysql
+dnf list installed mysql nginx
 
 if [ $? -ne 0 ]
 then
@@ -20,6 +20,7 @@ else
 echo "show as mysql is not present"
  exit 12
  fi
+
 
 
    
