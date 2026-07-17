@@ -7,6 +7,7 @@ then
  echo "User is running with root access"
 else
  echo "User is not running with root access"
+ exit 12
 fi
 
    
