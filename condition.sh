@@ -5,7 +5,7 @@ USERID=$(id -u)
 if [ $USERID -ne 0 ] then
  echo "Print you are not root user"
  exit 12
-else 
+ else 
  echo "You are running as root user"
 fi
 
