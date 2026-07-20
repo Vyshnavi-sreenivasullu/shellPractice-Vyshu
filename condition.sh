@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 R="\e[31m"
-Y="\3[33m"
+Y="\e[33m"
 N="\e[0m"
 
 if [ $USERID -ne 0 ] ; then
