@@ -14,20 +14,20 @@ fi
 
 VALIDATE() {
      if [ $1 -eq 0 ] ; then
-       echo " installing python3...."
+       echo " installing $2...."
      else 
-       echo " python3 is not installled.."
+       echo " $2 is not installled.."
      exit 13
-fi
+    fi
 
 }
 
-dnf list  installed python3X
+dnf list  installed python3
 
 if [ $? -eq 0 ] ; then
  echo " Installing Python 3"
  dnf  install  python3 
- VALIDATE $? $1
+ VALIDATE $? 
 else
  echo " Not installed Python 3"
  exit 12
@@ -45,7 +45,7 @@ dnf list installed nginx
  if [ $? -eq 0 ] ; then 
  echo " nginx going to install  tooo."
 dnf install nginx
-VALIDATE $? $2
+VALIDATE $? 
 
  else
   echo " not installed ."
