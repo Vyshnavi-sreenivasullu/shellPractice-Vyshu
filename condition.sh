@@ -27,7 +27,7 @@ dnf list  installed python
 if [ $? -eq 0 ] ; then
  echo " Installing Python "
  dnf  install  python 
- VALIDATE $? python
+ VALIDATE $? "python"
 else
  echo " Not installed Python "
  exit 12
@@ -45,7 +45,7 @@ dnf list installed nginx
  if [ $? -eq 0 ] ; then 
  echo " nginx going to install  tooo."
 dnf install nginx
-VALIDATE $? nginx
+VALIDATE $? "nginx"
 
  else
   echo " not installed ."
