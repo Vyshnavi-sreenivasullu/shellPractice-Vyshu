@@ -6,14 +6,14 @@ Y="\e[33m"
 N="\e[0m"
 
 if [ $USERID -ne 0 ] ; then
- echo  -e " $R Print you are not root user $N"
+ echo -e " $R Print you are not root user $N"
  exit 12
 else 
  echo "$Y You are running as root user $N"
 fi
 
 VALIDATE() {
-     if [ $? -eq 0 ] ; then
+     if [ $1 -eq 0 ] ; then
        echo " installing python3...."
      else 
        echo " python3 is not installled.."
