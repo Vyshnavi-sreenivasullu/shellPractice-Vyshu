@@ -4,11 +4,12 @@ USERID=$(id -u)
 R="\e[31m"
 Y="\e[33m"
 N="\e[0m"
-LOGS_FOLDER="/var/log/shellscript-logs"
-# SCRIPT_NAME=$(basename "$0" .sh)
+LOGS_FLODER="/var/lo/shellscript-logs"
+SCRIPT_NAME=$(echo $0 | cut  -d "." - f1)
+LOG_FILE="$LOG_FILE/$SCRIPT_NAME. log"
+# LOGS_FOLDER="/var/log/shellscript-logs"
+#  SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 # LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
- SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
-LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_FOLDER
 
