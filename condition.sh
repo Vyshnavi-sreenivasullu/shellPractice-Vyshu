@@ -37,7 +37,7 @@ dnf list installed nginx
 if [ $? -ne 0 ]; then 
  echo -e "${Y} nginx going to install  tooo.${N}"
  dnf install nginx
- VALIDATE $? "nginx"
+ VALIDATE $2 "nginx"
 else
   echo -e "${R} already installed ${N} ."
   exit 12
