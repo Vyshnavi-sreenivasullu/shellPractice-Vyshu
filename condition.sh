@@ -14,9 +14,9 @@ fi
 
 VALIDATE() {
      if [ $1 -eq 0 ] ; then
-       echo -e " ${Y} iinstalled successfully....${N}"
+       echo -e " ${Y} $2 iinstalled successfully....${N}"
      else 
-       echo -e" ${Y} installation failed..${N}"
+       echo -e " ${Y} $2 installation failed..${N}"
      exit 13
     fi
 
@@ -24,7 +24,7 @@ VALIDATE() {
 
 dnf list  installed python3
 
-if [ $? -eq 0 ]; then
+if [ $? -ne 0 ]; then
  echo -e " ${Y} Installing Python ${N} "
  dnf  install  python3
  VALIDATE $? "python3"
@@ -34,7 +34,7 @@ else
 fi
 
 dnf list installed nginx
-if [ $? -eq 0 ]; then 
+if [ $? -ne 0 ]; then 
  echo -e "${Y} nginx going to install  tooo.${N}"
  dnf install nginx
  VALIDATE $? "nginx"
