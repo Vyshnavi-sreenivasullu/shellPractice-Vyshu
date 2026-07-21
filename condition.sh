@@ -25,7 +25,7 @@ VALIDATE() {
 dnf list  installed python3
 
 if [ $? -eq 0 ]; then
- echo -e " {Y} Installing Python {N} "
+ echo -e " ${Y} Installing Python ${N} "
  dnf  install  python3
  VALIDATE $? "python3"
 else
