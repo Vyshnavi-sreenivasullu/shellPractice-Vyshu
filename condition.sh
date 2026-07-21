@@ -10,7 +10,7 @@ LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_FOLDER
 
-echo -e "{Y} script executed time $(date) {N}" &>>$LOG_FILE
+echo -e "${Y} script executed time $(date) ${N}" &>>$LOG_FILE
 
 if [ $USERID -ne 0 ]; then
  echo -e " ${R} Print you are not root user ${N}" &>>$LOG_FILE
