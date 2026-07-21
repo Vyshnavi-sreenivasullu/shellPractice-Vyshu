@@ -30,14 +30,13 @@ if [ $? -ne 0 ]; then
  VALIDATE $? "python3"
 else
  echo -e "${R} already installed  ${N} "
- exit 12
 fi
 
 dnf list installed nginx
 if [ $? -ne 0 ]; then 
  echo -e "${Y} nginx going to install  tooo.${N}"
  dnf install nginx
- VALIDATE $2 "nginx"
+ VALIDATE $? "nginx"
 else
   echo -e "${R} already installed ${N} ."
   exit 12
