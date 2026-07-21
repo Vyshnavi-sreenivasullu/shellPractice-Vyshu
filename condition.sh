@@ -14,9 +14,9 @@ fi
 
 VALIDATE() {
      if [ $1 -eq 0 ] ; then
-       echo " installing $2...."
+       echo "  $2 iinstalled successfully...."
      else 
-       echo " $2 is not installled.."
+       echo " $2 installation failed.."
      exit 13
     fi
 
