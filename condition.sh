@@ -29,7 +29,7 @@ if [ $? -ne 0 ]; then
  dnf  install  python3
  VALIDATE $? "python3"
 else
- echo -e "${R} Error :: Not installed Python3 ${N} "
+ echo -e "${R} already installed  ${N} "
  exit 12
 fi
 
