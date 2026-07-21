@@ -39,7 +39,7 @@ if [ $? -eq 0 ]; then
  dnf install nginx
  VALIDATE $? "nginx"
 else
-  echo -e "${R} not installed ${N} ."
+  echo -e "${R} already installed ${N} ."
   exit 12
 fi
 
